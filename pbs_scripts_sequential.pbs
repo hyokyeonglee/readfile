@@ -1,0 +1,8 @@
+#!/bin/bash
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=24:00:00
+#PBS -l mem=4000mb
+#PBS -l pmem=4000mb
+#PBS -l vmem=4000mb
+cd /host/username/examplecode
+matlab -nodisplay -nosplash < filename.m > output_sequential.log
