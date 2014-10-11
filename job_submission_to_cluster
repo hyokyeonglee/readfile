@@ -1,0 +1,7 @@
+commands for the pbs job submission to the cluster:
+qsub -q destination pbs_scripts_parallel.pbs
+qsub -q destination pbs_scripts_sequential.pbs
+
+aliased commands in shell script to obtain resources for interactive mode:
+alias myqsub_matlab_sequential="qsub -I -X -q cmb -l nodes=1:ppn=1 -l walltime=24:00:00 -l mem=40000mb -l pmem=40000mb -l vmem=40000mb"
+alias myqsub_matlab_parallel="qsub -I -X -q cmb -l nodes=1:ppn=10 -l walltime=24:00:00 -l mem=40000mb -l pmem=40000mb -l vmem=40000mb"
