@@ -55,8 +55,8 @@ save case4.mat M;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % case5: Read a comma-separated numeric data (CSV) file. If non-numeric 
-% data are also contained in the file, call the readFile() that uses 
-% textscan().
+% data are also contained in the file, call the readfile_mixed_format(...) 
+% above that uses textscan().
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 M = readfile_csv(filename);
 save case5.mat M;
